@@ -4,8 +4,6 @@ import android.content.Context
 import com.artlite.sharedpreferences.field.abs.BaseManager
 
 /**
- * Context manager.
+ * Application context manager.
  */
-internal object Managers {
-    internal object ApplicationContext : BaseManager<Context>()
-}
+internal object ContextManager : BaseManager<Context>()

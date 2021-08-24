@@ -1,7 +1,7 @@
 package com.artlite.sharedpreferences.field.core
 
 import android.content.Context
-import com.artlite.sharedpreferences.field.managers.Managers
+import com.artlite.sharedpreferences.field.managers.ContextManager
 
 /**
  * Shared preferences field core module.
@@ -14,7 +14,7 @@ object SPF {
      */
     @Synchronized
     fun spfConfigure(context: Context) {
-        Managers.ApplicationContext.update { context }
+        ContextManager.update { context }
     }
 
 }
