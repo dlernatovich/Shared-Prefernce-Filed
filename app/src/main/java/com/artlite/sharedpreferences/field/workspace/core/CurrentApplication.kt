@@ -1,6 +1,7 @@
 package com.artlite.sharedpreferences.field.workspace.core
 
 import android.app.Application
+import com.artlite.sharedpreferences.field.core.SPF
 
 /**
  * Current application class.
@@ -12,6 +13,7 @@ class CurrentApplication : Application() {
      */
     override fun onCreate() {
         super.onCreate()
+        SPF.spfConfigure(this)
     }
 
 }
