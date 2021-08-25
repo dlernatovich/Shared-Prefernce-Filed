@@ -9,11 +9,17 @@ import com.artlite.sharedpreferences.field.core.SPF
 class CurrentApplication : Application() {
 
     /**
+     * Logger instance.
+     */
+    private val logger by SPF.Delegators.Login()
+
+    /**
      * Method which provide to create application functional.
      */
     override fun onCreate() {
         super.onCreate()
         SPF.spfConfigure(this)
+        logger.info("Application was created.")
     }
 
 }
